@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://ivwn43i5bm6x"]
+
+[ext_resource type="PackedScene" uid="uid://djymboaf2e7jb" path="res://scenes/ui/game_break/buttons/game_break_buttons.tscn" id="1_7l5y1"]
+
+[node name="TitleScreenButtons" unique_id=245333363 instance=ExtResource("1_7l5y1")]
+
+[node name="TitleScreen" parent="." index="0" unique_id=542676717]
+text = ""
+
+[node name="Credits" type="Button" parent="Buttuns" parent_id_path=PackedInt32Array(989932022) index="2" unique_id=2082212101]
+layout_mode = 2
+text = "CONTEXT_CREDITS"
+
+[connection signal="pressed" from="Buttuns/Credits" to="." method="_on_credits_pressed"]

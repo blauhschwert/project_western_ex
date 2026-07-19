@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://bcjhujx2r5cs3"]
+
+[ext_resource type="Texture2D" uid="uid://c3ci4d3hat7vx" path="res://assets/western/revolver-sheet.png" id="1_csbbp"]
+[ext_resource type="Script" uid="uid://vsy7wlt6i86" path="res://scenes/gun/gun.gd" id="1_fjnj2"]
+
+[sub_resource type="Animation" id="Animation_fjnj2"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_eo2c1"]
+resource_name = "shoot"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.13333334, 0.3, 0.46666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_084rm"]
+_data = {
+&"RESET": SubResource("Animation_fjnj2"),
+&"shoot": SubResource("Animation_eo2c1")
+}
+
+[node name="Gun" type="Node2D" unique_id=1521808823]
+position = Vector2(176, 88)
+scale = Vector2(4, 4)
+script = ExtResource("1_fjnj2")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=503555776]
+texture = ExtResource("1_csbbp")
+hframes = 4
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=641133201]
+libraries/ = SubResource("AnimationLibrary_084rm")

@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://btdlsoqkfml7"]
+
+[ext_resource type="Script" uid="uid://b3qtoq8r8ivof" path="res://scenes/main.gd" id="1_0wfyh"]
+[ext_resource type="Texture2D" uid="uid://b4lxaynciiy84" path="res://assets/western/background.png" id="1_o5qli"]
+[ext_resource type="PackedScene" uid="uid://cugy8qoc8opgh" path="res://scenes/enemys/enemy.tscn" id="3_jyhfs"]
+[ext_resource type="PackedScene" uid="uid://bcjhujx2r5cs3" path="res://scenes/gun/gun.tscn" id="3_sugp2"]
+[ext_resource type="FontFile" uid="uid://cbsy1kd2n7qwv" path="res://assets/arcadeclassic/ARCADECLASSIC.TTF" id="5_tbgi4"]
+
+[node name="Main" type="Node2D" unique_id=610312832]
+script = ExtResource("1_0wfyh")
+
+[node name="background" type="Sprite2D" parent="." unique_id=1637616116]
+texture = ExtResource("1_o5qli")
+centered = false
+
+[node name="SpawnPosition" type="Node2D" parent="." unique_id=338159677]
+
+[node name="Marker2D" type="Marker2D" parent="SpawnPosition" unique_id=813712536]
+position = Vector2(480, 312)
+gizmo_extents = 24.6
+
+[node name="Enemy" parent="SpawnPosition/Marker2D" unique_id=758038889 instance=ExtResource("3_jyhfs")]
+
+[node name="Marker2D2" type="Marker2D" parent="SpawnPosition" unique_id=909378751]
+position = Vector2(320.6, 392.6)
+gizmo_extents = 24.6
+
+[node name="Marker2D3" type="Marker2D" parent="SpawnPosition" unique_id=429250940]
+position = Vector2(640.6, 392.6)
+gizmo_extents = 24.6
+
+[node name="Gun" parent="." unique_id=1521808823 instance=ExtResource("3_sugp2")]
+position = Vector2(712, 480)
+scale = Vector2(7, 7)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=727704142]
+
+[node name="Score" type="Control" parent="CanvasLayer" unique_id=1633341732]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 272.0
+offset_top = 8.0
+offset_right = 648.0
+offset_bottom = 104.0
+
+[node name="Label" type="Label" parent="CanvasLayer/Score" unique_id=1428464204]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.66700006
+offset_bottom = -0.03200531
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("5_tbgi4")
+theme_override_font_sizes/font_size = 32
+text = "Score :  "
+horizontal_alignment = 1
+vertical_alignment = 1

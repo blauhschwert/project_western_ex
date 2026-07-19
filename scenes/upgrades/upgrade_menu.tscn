@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bpywmvpgqbtn7"]
+
+[ext_resource type="Script" uid="uid://d4fj7xss3tm8h" path="res://scenes/upgrades/option_menu.gd" id="1_y7cw2"]
+
+[node name="UpgradeMenu" type="CanvasLayer" unique_id=1615506185]
+
+[node name="OptionMenu" type="VBoxContainer" parent="." unique_id=1711404636]
+unique_name_in_owner = true
+process_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_y7cw2")

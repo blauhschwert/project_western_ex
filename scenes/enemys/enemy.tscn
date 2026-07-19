@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://cugy8qoc8opgh"]
+
+[ext_resource type="Script" uid="uid://cogg16hfhyo0n" path="res://scenes/enemys/enemy.gd" id="1_pytu0"]
+[ext_resource type="Texture2D" uid="uid://dodptcn1yc6bo" path="res://assets/western/pixel_art_output_00022_.png" id="2_4f77a"]
+
+[node name="Enemy" type="Sprite2D" unique_id=1200642768]
+z_index = 1
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_4f77a")
+script = ExtResource("1_pytu0")
