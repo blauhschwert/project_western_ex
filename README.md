@@ -1,6 +1,6 @@
-# Endless Runner Example
+# Project Western Example
 
-A simple endless runner game example built with Godot.
+A simple western shooter like morhun.
 
 =====
 
@@ -8,39 +8,25 @@ A simple endless runner game example built with Godot.
 
 =====
 
-## Features
+## Description
 
-- Compact Endless Runner
-- 3-lane movement system
-- Obstacle spawning
-- Score system
-- Increasing game speed over time
-- Simple restart system
+Grab your revolver and become the fastest gunslinger in the West! Shoot bandits, flying hats, bottles, cacti, and other hidden targets as they pop up across a lively Wild West scene.
 
-## Controls
+Earn points, improve your accuracy, and try to beat your high score before time runs out. Quick reflexes and sharp eyes are the key to becoming a legendary cowboy!
 
-| Action | Key |
-|------|
-| Move Left | A / Left Arrow |
-| Move Right | D / Right Arrow |
-|------|
+Features: 
 
+• Fast-paced click shooting gameplay
+
+• Wild West themed targets and scenery
+
+• High score system 
+
+• Simple controls – just point and click!
+
+• Inspired by classic arcade shooting games
+
+Can you become the quickest shooter in the frontier? Yee-haw!
 
 ## Assets or Resourcess
 
-background : https://gif-superretroworld.itch.io/battler-pack
-
-vanice beach : https://crusenho.itch.io/beriesadventureseaside
-
-charackters : https://gif-superretroworld.itch.io/character-pack
-
-food icons : https://henrysoftware.itch.io/pixel-food
-
-font : https://www.dafont.com/arcade-classic-2.font
-
-wood shop : https://crusenho.itch.io/complete-ui-essential-pack
-
-music : https://tomfeldmann.itch.io/free-wild-music-pack
-beach music : https://honored-season.itch.io/a-smoothie-at-the-beach-bar
-
-crab : https://dustdfg.itch.io/animated-pixel-art-crab-enemy
